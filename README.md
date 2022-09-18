@@ -7,4 +7,4 @@ You can check out the [live project here]( https://ericopoku-bq613.github.io/cel
 - Allows a user to view list of items
 - Allows a recepient to pay for the invoice
 - Reads and updates user balance
-- Invoices are visible to only issue and recipient#� �c�e�l�o�-�i�n�v�o�i�c�e�s�
+- Invoices are visible to only issue and recipient
