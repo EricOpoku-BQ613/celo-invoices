@@ -55,7 +55,7 @@ contract CeloInvoice is Ownable {
     enum InvoiceStatus {
         UNDEFINED,
         PENDING,
-        PAYED,
+        PAID,
         DECLINED
     }
 
@@ -221,7 +221,7 @@ contract CeloInvoice is Ownable {
             "Invoice status is not pending"
         );
         address creator = _creators[_index];
-        invoice.status = InvoiceStatus.PAYED;
+        invoice.status = InvoiceStatus.PAID;
 
         require(
             IERC20Token(cUsdTokenAddress).transferFrom(
