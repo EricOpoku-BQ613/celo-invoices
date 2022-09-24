@@ -46,24 +46,10 @@ contract CeloInvoice {
         uint total
     );
 
-    modifier onlyOwner(uint index) {
-        require(
-            _creators[index] != address(0),
-            "You can't access this invoice"
-        );
-        _;
-    }
-
-    address owner;
-
     address internal cUsdTokenAddress =
         0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1;
 
     Counters.Counter invoiceIndex;
-
-    constructor() {
-        owner = msg.sender;
-    }
 
     enum InvoiceStatus {
         PENDING,
